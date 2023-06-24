@@ -8,11 +8,11 @@ The following are the observations done by myself by executing all the 10 files 
 1.	Target: To run the model and understand the working<br>
 2.	Results:<br>
 &nbsp;&nbsp;a.	Parameters: 6.3M<br>
-&nbsp;&nbsp;        b.	Best Training Accuracy: 99.99<br>
-&nbsp;&nbsp;        c.	Best Test Accuracy: 99.24<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.99<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 99.24<br>
 3.	Analysis:<br>
-&nbsp;&nbsp;        a.	Extremely Heavy Model for such a problem<br>
-&nbsp;&nbsp;        b.	Model is over-fitting<br>
+&nbsp;&nbsp;a.	Extremely Heavy Model for such a problem<br>
+&nbsp;&nbsp;b.	Model is over-fitting<br>
 ------------------------------------------------------------------------------------------------------------------------------------------------ 
 <h3>ERA1S7F2</h3>
 1.	Target: To reduce the complexity of the model so as to reduce overfitting<br>
@@ -78,71 +78,71 @@ The following are the observations done by myself by executing all the 10 files 
 &nbsp;&nbsp;b.	Best Training Accuracy: 98.68<br>
 &nbsp;&nbsp;c.	Best Test Accuracy: 98.59<br>
 3.	Analysis:<br>
-&nbsp;&nbsp;a.	Model now has batch normalization and dropout and adaptive average pooling. 
-&nbsp;&nbsp;b.	Little reduction in time and overfitting. However, need to increase overall accuracy. 
+&nbsp;&nbsp;a.	Model now has batch normalization and dropout and adaptive average pooling.<br> 
+&nbsp;&nbsp;b.	Little reduction in time and overfitting. However, need to increase overall accuracy. <br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F7</h3>
-1.	Target: increasing number of parameters by increasing the layers.    
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 11,994
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.21
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.40
-3.	Analysis:
-&nbsp;&nbsp;a.	Increasing the number of parameters have increased the accuracy of train and test. However, overfitting has again occurred. This would be because of a certain layer causing the same.
+1.	Target: increasing number of parameters by increasing the layers.   <br> 
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 11,994<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.21<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.40<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Increasing the number of parameters have increased the accuracy of train and test. However, overfitting has again occurred. This would be because of a certain layer causing the same.<br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F8</h3>
-1.	Target: Changing the maxpooling layer 
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 13,808
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.21
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.40
-3.	Analysis:
-&nbsp;&nbsp;a.	Test Accuracy is more than Train accuracy in most of the epochs. 
-&nbsp;&nbsp;b.	For Epoch 15, was able to touch 99.4 mark for test accuracy and train accuracy is 99.25. 
-&nbsp;&nbsp;c.	However, the accuracy has just touch 99.94 mark. It needs to be consistent. 
+1.	Target: Changing the maxpooling layer <br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 13,808<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.21<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.40<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Test Accuracy is more than Train accuracy in most of the epochs.<br> 
+&nbsp;&nbsp;b.	For Epoch 15, was able to touch 99.4 mark for test accuracy and train accuracy is 99.25. <br>
+&nbsp;&nbsp;c.	However, the accuracy has just touch 99.94 mark. It needs to be consistent. <br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F9</h3>
-1.	Target: Changing the maxpooling layer 
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 13,808
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.21
-&nbsp;&nbsp;c.	Best Test Accuracy: 99.40
-3.	Analysis:
-&nbsp;&nbsp;a.	Test Accuracy is more than Train accuracy in most of the epochs. 
-&nbsp;&nbsp;b.	For Epoch 15, was able to touch 99.4 mark for test accuracy and train accuracy is 99.25. 
-&nbsp;&nbsp;c.	However, the accuracy has just touch 99.94 mark. It needs to be consistent. 
+1.	Target: Changing the maxpooling layer <br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 13,808<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.21<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 99.40<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Test Accuracy is more than Train accuracy in most of the epochs. <br>
+&nbsp;&nbsp;b.	For Epoch 15, was able to touch 99.4 mark for test accuracy and train accuracy is 99.25. <br>
+&nbsp;&nbsp;c.	However, the accuracy has just touch 99.94 mark. It needs to be consistent. <br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F9</h3>
-1.	Target: Augmenting the image to have consistency in higher accuracy
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 13,808
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.04
-&nbsp;&nbsp;c.	Best Test Accuracy: 99.49  (16th Epoch)
-3.	Analysis:
-&nbsp;&nbsp;a.	Train accuracy is less than Test Accuracy and Test accuracy has reached more than 99.4. This has happened as we have made the train data tougher to train.  
-&nbsp;&nbsp;b.	Test accuracy occurred more than once greater than for first 20  Epochs.
+1.	Target: Augmenting the image to have consistency in higher accuracy<br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 13,808<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.04<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 99.49  (16th Epoch)<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Train accuracy is less than Test Accuracy and Test accuracy has reached more than 99.4. This has happened as we have made the train data tougher to train.  <br>
+&nbsp;&nbsp;b.	Test accuracy occurred more than once greater than for first 20  Epochs.<br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F10</h3>
-1.	Target: Using step wise learning rate to train the model in a better way.
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 13,808
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.04
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.48 (15th Epoch)
-3.	Analysis:
-&nbsp;&nbsp;a.	Test Accuracy is more than Train accuracy in most of the epochs. 
-&nbsp;&nbsp;b.	Consistent 99.4 test accuracy. 
+1.	Target: Using step wise learning rate to train the model in a better way.<br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 13,808<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.04<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.48 (15th Epoch)<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Test Accuracy is more than Train accuracy in most of the epochs. <br>
+&nbsp;&nbsp;b.	Consistent 99.4 test accuracy. <br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------
 
 </h2>Coming back to the assignment:</h2>
-1st change that was done is to reduce the number of epochs to 15. 
-2nd change is to change the skeleton of the convolution network. 
+1st change that was done is to reduce the number of epochs to 15. <br>
+2nd change is to change the skeleton of the convolution network. <br>
 
-Target:
-    1. In order to reduce the number of parameters change the skeleton of the convolution network
-    2. I have used two maxpooling in order to achieve less number of parameters with more receptive field in the end.
+Target:<br>
+    1. In order to reduce the number of parameters change the skeleton of the convolution network<br>
+    2. I have used two maxpooling in order to achieve less number of parameters with more receptive field in the end.<br>
     
-Resut:
+Resut:<br>
     Train Accuracy: 98.84
     Test Accuracy: 99.25
         
