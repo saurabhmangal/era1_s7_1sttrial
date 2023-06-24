@@ -2,82 +2,82 @@
 
 <h3>Model is seperated in model.py and then called from the main file which is in this case 1st_change.ipynb</h3>
 
-The following are the observations done by myself by executing all the 10 files taught in class. 
+The following are the observations done by myself by executing all the 10 files taught in class. <br>
 
 <h3>ERA1S7F1</h3>
-1.	Target: To run the model and understand the working
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 6.3M
-&nbsp;&nbsp;        b.	Best Training Accuracy: 99.99
-&nbsp;&nbsp;        c.	Best Test Accuracy: 99.24
-3.	Analysis:
-&nbsp;&nbsp;        a.	Extremely Heavy Model for such a problem
-&nbsp;&nbsp;        b.	Model is over-fitting
+1.	Target: To run the model and understand the working<br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 6.3M<br>
+&nbsp;&nbsp;        b.	Best Training Accuracy: 99.99<br>
+&nbsp;&nbsp;        c.	Best Test Accuracy: 99.24<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;        a.	Extremely Heavy Model for such a problem<br>
+&nbsp;&nbsp;        b.	Model is over-fitting<br>
 ------------------------------------------------------------------------------------------------------------------------------------------------ 
 <h3>ERA1S7F2</h3>
-1.	Target: To reduce the complexity of the model so as to reduce overfitting
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 1.94M
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.52
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.83
-3.	Analysis:
-&nbsp;&nbsp;a.	Little less complex model 
-&nbsp;&nbsp;b.	Model is still over-fitting
-&nbsp;&nbsp;c.	Test accuracy reduced further
+1.	Target: To reduce the complexity of the model so as to reduce overfitting<br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 1.94M<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.52<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.83<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Little less complex model <br>
+&nbsp;&nbsp;b.	Model is still over-fitting<br>
+&nbsp;&nbsp;c.	Test accuracy reduced further<br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F3</h3>
-1.	Target: To reduce the complexity of the model so as to reduce overfitting
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 10,790
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.1
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.85
-3.	Analysis:
-&nbsp;&nbsp;a.	Comparatively very light model  
-&nbsp;&nbsp;b.	Epoch 0 accuracy is very less.
-&nbsp;&nbsp;c.	Comparatively Good Model
-&nbsp;&nbsp;d.	Does not have overfitting
+1.	Target: To reduce the complexity of the model so as to reduce overfitting<br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 10,790<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.1<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.85<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Comparatively very light model  <br>
+&nbsp;&nbsp;b.	Epoch 0 accuracy is very less.<br>
+&nbsp;&nbsp;c.	Comparatively Good Model<br>
+&nbsp;&nbsp;d.	Does not have overfitting<br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F4</h3>
-1.	Target: To increase the accuracy of train and test by introducing batch network
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 10,970
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.91
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.18
-3.	Analysis:
-&nbsp;&nbsp;a.	Same model with batch normalization at each layer
-&nbsp;&nbsp;b.	Epoch 0 starts with comparatively high train accuracy than the of F3.
-&nbsp;&nbsp;c.	Model starts seeing overfitting/
-&nbsp;&nbsp;d.	Going further, will increase the difference between train and test.
+1.	Target: To increase the accuracy of train and test by introducing batch network<br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 10,970<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.91<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.18<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Same model with batch normalization at each layer<br>
+&nbsp;&nbsp;b.	Epoch 0 starts with comparatively high train accuracy than the of F3.<br>
+&nbsp;&nbsp;c.	Model starts seeing overfitting<br>
+&nbsp;&nbsp;d.	Going further, will increase the difference between train and test.<br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F5</h3>
-1.	Target: Introducing the regularization parameter i.e. dropout to decrease overfitting. Behaving like God over here right now. Only suitable for MNIST data. For other complex data. Dropout has to be less and at every layer level. 
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 10,970
-&nbsp;&nbsp;b.	Best Training Accuracy: 99.44
-&nbsp;&nbsp;c.	Best Test Accuracy: 99.20
-3.	Analysis:
-&nbsp;&nbsp;a.	Model now has batch normalization and dropout.
-&nbsp;&nbsp;b.	Model parameters will remain same as before. 
-&nbsp;&nbsp;c.	Very less overfitting. However, need to increase the test accuracy. 
+1.	Target: Introducing the regularization parameter i.e. dropout to decrease overfitting. Behaving like God over here right now. Only suitable for MNIST data. For other complex data. Dropout has to be less and at every layer level. <br>
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 10,970<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 99.44<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 99.20<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Model now has batch normalization and dropout.<br>
+&nbsp;&nbsp;b.	Model parameters will remain same as before. <br>
+&nbsp;&nbsp;c.	Very less overfitting. However, need to increase the test accuracy. <br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F6(a)</h3>
-1.	Target: Introducing the global average pooling in the last layer in order to increase the accuracy.   
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 6,070
-&nbsp;&nbsp;b.	Best Training Accuracy: 98.74
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.66
-3.	Analysis:
-&nbsp;&nbsp;a.	Model now has batch normalization, dropout, and global average pooling.
-&nbsp;&nbsp;b.	Drastic Reduction in Model parameters from before.
-&nbsp;&nbsp;c.	Very less overfitting and accuracy has further decreased. Not to be compared with previous model as the number of parameters has decreased drastically. 
+1.	Target: Introducing the global average pooling in the last layer in order to increase the accuracy. <br>  
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 6,070<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 98.74<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.66<br>
+3.	Analysis:<br>
+&nbsp;&nbsp;a.	Model now has batch normalization, dropout, and global average pooling.<br>
+&nbsp;&nbsp;b.	Drastic Reduction in Model parameters from before.<br>
+&nbsp;&nbsp;c.	Very less overfitting and accuracy has further decreased. Not to be compared with previous model as the number of parameters has decreased drastically. <br>
 -------------------------------------------------------------------------------------------------------------------------------------------
 <h3>ERA1S7F6(b)</h3>
-1.	Target: Introducing the adaptive average pooling in the last layer in order to increase the accuracy.   
-2.	Results:
-&nbsp;&nbsp;a.	Parameters: 6,070
-&nbsp;&nbsp;b.	Best Training Accuracy: 98.68
-&nbsp;&nbsp;c.	Best Test Accuracy: 98.59
-3.	Analysis:
+1.	Target: Introducing the adaptive average pooling in the last layer in order to increase the accuracy.  <br> 
+2.	Results:<br>
+&nbsp;&nbsp;a.	Parameters: 6,070<br>
+&nbsp;&nbsp;b.	Best Training Accuracy: 98.68<br>
+&nbsp;&nbsp;c.	Best Test Accuracy: 98.59<br>
+3.	Analysis:<br>
 &nbsp;&nbsp;a.	Model now has batch normalization and dropout and adaptive average pooling. 
 &nbsp;&nbsp;b.	Little reduction in time and overfitting. However, need to increase overall accuracy. 
 -------------------------------------------------------------------------------------------------------------------------------------------
