@@ -131,26 +131,23 @@ The following are the observations done by myself by executing all the 10 files 
 3.	Analysis:<br>
 &nbsp;&nbsp;a.	Test Accuracy is more than Train accuracy in most of the epochs. <br>
 &nbsp;&nbsp;b.	Consistent 99.4 test accuracy. <br>
+
 -------------------------------------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------------------------
 
-</h2>Coming back to the assignment:</h2>
-1st change that was done is to reduce the number of epochs to 15. <br>
-2nd change is to change the skeleton of the convolution network. <br>
+<h2>Coming back to the assignment:</h2>
+&nbsp;&nbsp;1st change that was done is to reduce the number of epochs to 15. <br>
+&nbsp;&nbsp;2nd change is to change the skeleton of the convolution network. <br>
 
-Target:<br>
-    1. In order to reduce the number of parameters change the skeleton of the convolution network<br>
-    2. I have used two maxpooling in order to achieve less number of parameters with more receptive field in the end.<br>
+<h2>Target:</h2>
+&nbsp;&nbsp;    1. In order to reduce the number of parameters change the skeleton of the convolution network<br>
+&nbsp;&nbsp;    2. I have used two maxpooling in order to achieve less number of parameters with more receptive field in the end.<br>
     
-Resut:<br>
-    Train Accuracy: 98.84
-    Test Accuracy: 99.25
+<h2>Resut:</h2>
+&nbsp;&nbsp;   Train Accuracy: 98.84<br>
+&nbsp;&nbsp;    Test Accuracy: 99.25<br>
         
-Analysis:
-    Total number of parameters: 8,108
-    The accuracy has been reduced to 99.25 and it is inconsistent
+<h2>Analysis:</h2>
+&nbsp;&nbsp;    Total number of parameters: 8,108<br>
+&nbsp;&nbsp;    The accuracy has been reduced to 99.25 and it is inconsistent<br>
     
-    
-
-
-```
